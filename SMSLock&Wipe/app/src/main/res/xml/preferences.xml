@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/preferences_lock_category" >
+        <CheckBoxPreference android:key="lock_enabled"
+            android:title="@string/preferences_lock_title"
+            android:summary="@string/preferences_lock_summary"
+            android:defaultValue="@bool/config_lock_enabled" />
+        <EditTextPreference android:key="lock_activation_sms"
+            android:title="@string/preferences_lock_sms_title"
+            android:summary="@string/preferences_lock_sms_summary"
+            android:maxLength="160"
+            android:defaultValue="@string/config_lock_activation_sms"
+            android:dependency="lock_enabled" />
+        <EditTextPreference android:key="lock_password"
+            android:title="@string/preferences_lock_password_title"
+            android:summary="@string/preferences_lock_password_summary"
+            android:maxLength="16"
+            android:defaultValue="@string/config_lock_password"
+            android:dependency="lock_enabled"
+            />
+
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/preferences_wipe_category" >
+        <CheckBoxPreference android:key="wipe_enabled"
+            android:title="@string/preferences_wipe_enabled_title"
+            android:summary="@string/preferences_wipe_enabled_summary"
+            android:defaultValue="@bool/config_wipe_enabled" />
+        <EditTextPreference android:key="wipe_activation_sms"
+            android:title="@string/preferences_wipe_activation_sms_title"
+            android:summary="@string/preferences_wipe_activation_sms_summary"
+            android:maxLength="160"
+            android:defaultValue="@string/config_wipe_activation_sms"
+            android:dependency="wipe_enabled" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/preferences_alarm_category">
+        <CheckBoxPreference android:key="alarm_enabled"
+                android:title="@string/preferences_alarm_enabled_title"
+                android:summary="@string/preferences_alarm_enabled_summary"
+                android:defaultValue="@bool/config_default_alarm_enabled"/>
+        <EditTextPreference android:key="alarm_activation_sms"
+                android:title="@string/preferences_alarm_activation_sms_title"
+                android:summary="@string/preferences_alarm_activation_sms_summary"
+                android:maxLength="160"
+                android:defaultValue="@string/config_default_alarm_activation_sms"
+                android:dependency="alarm_enabled" />
+        <CheckBoxPreference android:key="alarm_vibrate"
+                android:title="@string/preferences_alarm_vibrate_title"
+                android:summary="@string/preferences_alarm_vibrate_summary"
+                android:defaultValue="@string/config_default_alarm_vibrate"
+                android:dependency="alarm_enabled" />
+        <ListPreference android:key="alarm_duration"
+                android:title="@string/preferences_alarm_duration_title"
+                android:summary="@string/preferences_alarm_duration_summary"
+                android:entries="@array/preferences_alarm_duration_entries"
+                android:entryValues="@array/preferences_alarm_duration_values"
+                android:defaultValue="@string/config_default_alarm_duration"
+                android:dependency="alarm_enabled" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/preferences_battery_level">
+        <CheckBoxPreference android:key="battery_level_enabled"
+            android:title="@string/preferences_battery_level_title"
+            android:summary="@string/preferences_battery_level_summary"
+            android:defaultValue="@bool/config_battery_level_enabled"/>
+        <EditTextPreference android:key="battery_level_activation_sms"
+            android:title="@string/preferences_battery_level_activation_sms_title"
+            android:summary="@string/preferences_battery_level_sms_summary"
+            android:maxLength="160"
+            android:defaultValue="@string/config_default_battery_activation_sms"
+            android:dependency="battery_level_enabled" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/preferences_celltower_location">
+        <CheckBoxPreference android:key="cell_location_enabled"
+            android:title="@string/preferences_cell_tower_title"
+            android:summary="@string/preferences_cell_tower_summary"
+            android:defaultValue="@bool/config_cell_tower_enabled"/>
+
+        <EditTextPreference android:key="cell_tower_activation_sms"
+            android:title="@string/preferences_cell_tower_activation_title"
+            android:summary="@string/preferences_cell_tower_activation_summary"
+            android:maxLength="160"
+            android:defaultValue="@string/config_default_cell_tower_activation_sms"
+            android:dependency="cell_location_enabled" />
+    </PreferenceCategory>
+
+    <Preference android:key="settings"
+        android:title="@string/preferences_settings_category"
+       />
+
+
+</PreferenceScreen>

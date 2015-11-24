@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Total SMS Control</string>
+
+    <string name="alarm_dialog_stop">Stop alarm!</string>
+
+    <string name="device_admin_reason">Total SMS Control requires device admin control for the wipe/lock camera features.</string>
+
+    <string name="preferences_alarm_category">Alarm</string>
+    <string name="preferences_alarm_enabled_title">Alarm</string>
+    <string name="preferences_alarm_enabled_summary">Play a loud alarm when activation sms is sent.</string>
+    <string name="preferences_alarm_activation_sms_title">Alarm Activation SMS</string>
+    <string name="preferences_alarm_activation_sms_summary">Choose what text to send to activate the alarm. It is recommended to use a PIN in your activation SMS to avoid unauthorised activation of the alarm.</string>
+    <string name="preferences_alarm_vibrate_title">Vibrate</string>
+    <string name="preferences_alarm_vibrate_summary">Whether to vibrate when alarm is activated.</string>
+    <string name="preferences_alarm_duration_title">Alarm duration</string>
+    <string name="preferences_alarm_duration_summary">How long the alarm should last.</string>
+
+
+    <string name="preferences_lock_category">Lock</string>
+    <string name="preferences_lock_title">Lock</string>
+    <string name="preferences_lock_summary">Lock the device when activation sms is sent.</string>
+    <string name="preferences_lock_sms_title">Lock SMS Code</string>
+    <string name="preferences_lock_sms_summary">Choose what text to send to lock the device.Use a PIN in your activation SMS to avoid unauthorised locking.</string>
+    <string name="preferences_lock_password_title">Setup  password</string>
+    <string name="preferences_lock_password_summary">Choose what password will be used to lock the device. This is the default password that will be set, custom passwords can be provided when sending SMS by appending the requested password to the SMS. If set to blank, the password/lock method will not be changed but the device will get locked to force re-authentication using the existing password.</string>
+    <string name="preferences_lock_camera_title" >Disable Camera </string>
+    <string name="preferences_lock_camera_summary">Sometimes we need to disable camera</string>
+
+    <string name="preferences_wipe_category">Wipe</string>
+    <string name="preferences_wipe_enabled_title">Wipe</string>
+    <string name="preferences_wipe_enabled_summary">Wipe the device when activation sms is sent.This will erase your sensitive data,app data ..etc</string>
+    <string name="preferences_wipe_activation_sms_title">Wipe Activation SMS</string>
+    <string name="preferences_wipe_activation_sms_summary">Choose what text to send to wipe the device. It is recommended to use a PIN in your activation SMS to avoid unauthorised wiping.</string>
+    <string name="preferences_call_forwarding">Call Forwarding</string>
+    <string name="preferences_call_forwarding_title">Enable Call Forwarding</string>
+    <string name="preferences_call_forwarding_summary">Call forwarding is good</string>
+    <string name="preferences_battery_level">Battery Level</string>
+    <string name="preferences_settings_category">Other Settings</string>
+    <string name="faq">FAQ</string>
+    <string name="version">1.0</string>
+    <string name="config_lock_message">Ownr Info</string>
+    <string name="preferences_battery_level_title">Respond with battery level</string>
+    <string name="preferences_battery_level_summary">sms your current phone battery status </string>
+    <string name="preferences_call_forwarding_mobile_title">Enter new mobile number</string>
+    <string name="preferences_call_forwarding_mobile_summary">blank space will not be added</string>
+    <string name="config_default_call_forwarding_activation_sms">call forwarding</string>
+    <string name="preferences_call_forwarding_activation_sms_title">Enable call forwarding</string>
+    <string name="preferences_hide_title">Hide Icon</string>
+    <string name="preferences_hide_summary">Hide Summary</string>
+    <string name="config_default_battery_activation_sms">Trigger batterylevel</string>
+    <string name="preferences_celltower_location">Cell Tower Location</string>
+    <string name="preferences_cell_tower_title">Cell Tower</string>
+    <string name="preferences_cell_tower_summary">
+        SMS your device SIM information
+    </string>
+
+    <string name="preferences_battery_level_activation_sms_title">Battery Activation Code</string>
+    <string name="preferences_battery_level_sms_summary">Choose what text to send to get battery information from the device.Use a PIN in your activation SMS to avoid unauthorised usage.</string>
+
+    <string name="preferences_cell_tower_activation_title">Cell Tower Code</string>
+    <string name="preferences_cell_tower_activation_summary">Choose what text to send to get cell tower information from the device.Use a PIN in your activation SMS to avoid unauthorised usage.</string>
+    <string name="config_default_cell_tower_activation_sms">Trigger cellinfo</string>
+
+    <string name="preferences_lock_screen_title">Lock Screen</string>
+    <string name="preferences_lock_message_summary">lock screen summary</string>
+    <string name="hideAlert">Please ensure that after hiding app you can\'t access from launcher.So enable before doing services before this</string>
+    <string name="preferences_fast_dial_title">Fast Dial</string>
+    <string name="preferences_fast_dial_summary">Please ensure that after hiding app you can\'t access from launcher.You can always open your app by dialing 1234567 from your dialer</string>
+    <string name="config_default_fast_dial_num">12345</string>
+
+
+    <string-array name="preferences_alarm_duration_entries">
+        <item>5s</item>
+        <item>10s</item>
+        <item>15s</item>
+        <item>20s</item>
+        <item>30s</item>
+        <item>1m</item>
+        <item>2m</item>
+    </string-array>
+    <string-array name="preferences_alarm_duration_values" translatable="false">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+    </string-array>
+</resources>
